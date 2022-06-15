@@ -1,0 +1,4 @@
+clean_data.csv
+NEVO2021.csv
+.env
+__pycache__/
