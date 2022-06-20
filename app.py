@@ -4,6 +4,9 @@ app = Flask(__name__)
 import pandas as pd
 import numpy as np
 from dotenv import load_dotenv    # pip install python-dotenv
+import kayen
+
+
 
 load_dotenv()
 
@@ -26,6 +29,11 @@ print(df_new)
 @app.route("/")
 def hello_world():
     return "<p>Hello, world!</p>"
+
+#http://localhost:5000/   #flask run
+@app.route("/kayen")
+def hellokayen():
+    return kayen.goedenmorgen()   
 
 
 @app.route("/ingredienten/exactnaam/<ingredient>")
