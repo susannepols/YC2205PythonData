@@ -6,7 +6,7 @@ import numpy as np
 from dotenv import load_dotenv    # pip install python-dotenv
 import kayen
 import felix
-
+import susanne
 
 load_dotenv()
 
@@ -37,7 +37,11 @@ def hellokayen():
 
 @app.route("/felix")
 def hellofelix():
-    return felix.goedenmorgen()   
+    return felix.goedenmorgen() 
+
+@app.route("/susanne")
+def hellosusanne():
+    return susanne.goedenmorgen()  
 
 @app.route("/ingredienten/exactnaam/<ingredient>")
 def geefingredient(ingredient):
