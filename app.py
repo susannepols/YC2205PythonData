@@ -31,6 +31,10 @@ def hellokayen():
 def hellofelix():
     return felix.goedenmorgen() 
 
+@app.route("/proefmetdb/<waarde>")
+def proefmetdb(waarde):
+    return felix.toevoegenaandb(waarde)
+
 @app.route("/susanne")
 def hellosusanne():
     return susanne.goedenmorgen()  
