@@ -1,2 +1,2 @@
-def goedemorgen():
+def goedenmorgen():
     return "goedemorgen van felix"
