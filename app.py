@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from dotenv import load_dotenv    # pip install python-dotenv
 import kayen
-
+import felix
 
 
 load_dotenv()
@@ -35,6 +35,9 @@ def hello_world():
 def hellokayen():
     return kayen.goedenmorgen()   
 
+@app.route("/felix")
+def hellofelix():
+    return felix.goedenmorgen()   
 
 @app.route("/ingredienten/exactnaam/<ingredient>")
 def geefingredient(ingredient):
